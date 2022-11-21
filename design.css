@@ -1,0 +1,701 @@
+@font-face {
+  font-family: "Tesla";
+  src: url("fonts/TESLA.ttf");
+}
+
+@font-face {
+  font-family: "K2D-Regular";
+  src: url("fonts/K2D-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("fonts/Gotham Medium.otf");
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #161b31;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d334e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  min-height: calc(100vh - 83px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-realizator {
+  color: white;
+  font-family: "TESLA";
+  text-align: center;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+.meniu {
+  min-height: 6vh;
+  margin: 0;
+  padding: 0;
+  background-color: #161b31;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.meniu li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 100%;
+}
+
+.meniu li a {
+  text-decoration: none;
+  color: #909090;
+  font-family: Tesla;
+  transition: color 0.3s;
+}
+
+.meniu li a:hover {
+  color: #d0d0d0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5vh;
+  padding: 8px 0 8px 0;
+  width: 100%;
+  margin-top: 1vh;
+  color: white;
+  background-color: #161b31;
+  font-family: "Gotham Medium", serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  box-sizing: border-box;
+  height: 88vh;
+  background-image: url("imagini/tesla.jpg");
+  background-position: center;
+  background-size: 100%;
+}
+
+.hero h1 {
+  font-weight: 100;
+}
+
+.title {
+  color: aliceblue;
+  font-family: "Tesla", sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+.modele {
+  text-align: center;
+  color: aliceblue;
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 25px;
+}
+
+.content-modele {
+  min-height: 88vh;
+  box-sizing: border-box;
+}
+
+.modele h1 {
+  font-weight: normal;
+}
+
+.content1 {
+  text-align: center;
+  color: aliceblue;
+  font-family: "Gotham Medium";
+  font-size: 25px;
+  width: 80%;
+}
+
+.tesla {
+  width: 80%;
+  text-align: justify;
+  color: lightgrey;
+  font-family: "Gotham Medium";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h1 {
+  color: white;
+}
+
+.models h1 {
+  color: #181b21;
+  font-family: "Gotham Medium", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 200;
+  width: 100%;
+}
+
+.models1 {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 25px;
+  border-radius: 8px;
+  padding-top: 2%;
+  position: absolute;
+  bottom: 20px;
+}
+
+.m1 h4 {
+  font-size: 28px;
+  margin: 10px 20px;
+  font-family: "Gotham Medium", sans-serif;
+  color: aliceblue;
+  text-align: center;
+}
+.m1 p {
+  font-size: 15px;
+  margin: 10px 30px;
+  font-family: "Gotham Medium", sans-serif;
+  color: aliceblue;
+  text-align: center;
+}
+
+.model3 h1 {
+  color: white;
+  font-family: "Gotham Medium", sans-serif;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 100;
+  width: 100%;
+}
+
+.modelx h1 {
+  color: #181b21;
+  font-family: "Gotham Medium", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  width: 100%;
+}
+
+.modely h1 {
+  color: white;
+  font-family: "Gotham Medium", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  width: 100%;
+}
+
+.hero-roadster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(imagini/roadsters.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 94vh;
+  width: 100%;
+}
+
+.hero-roadster h1 {
+  color: #000000;
+  font-family: "Gotham Medium", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 200;
+  width: 100%;
+}
+
+.roads {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.road1 {
+  font-size: 18px;
+  font-family: "Gotham Medium", sans-serif;
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.road2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.road h4 {
+  font-size: 28px;
+  margin: 0;
+  font-family: "Gotham Medium", sans-serif;
+  color: aliceblue;
+  text-align: center;
+}
+
+.road p {
+  font-size: 15px;
+  font-family: "Gotham Medium", sans-serif;
+  color: aliceblue;
+  text-align: center;
+}
+
+.cybertruck h1 {
+  color: black;
+  font-family: "Tesla", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  width: 100%;
+}
+
+.cyber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58%;
+  margin-top: 0px;
+  padding: 25px;
+  padding-top: 2%;
+}
+
+.cyber p {
+  color: #000000;
+  font-family: "Gotham Medium";
+  font-size: 22px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.models {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(imagini/models.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 94vh;
+  width: 100%;
+}
+
+.model3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(imagini/model3.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 94vh;
+  width: 100%;
+}
+
+.modelx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(imagini/modelx.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 94vh;
+  width: 100%;
+}
+
+.modely {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(imagini/modely.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 94vh;
+  width: 100%;
+}
+
+.cybertruck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(imagini/cybertrucks.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 94vh;
+  width: 100%;
+}
+
+.mod body {
+  background-color: black;
+}
+
+.meniu .actual a {
+  color: #ffffff;
+}
+
+.tip {
+  margin: 10px;
+}
+
+.tip a {
+  padding: 15px;
+}
+
+.tip img {
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.301);
+  width: 360px;
+  transition: opacity 0.5s;
+}
+
+.tip img:hover {
+  opacity: 0.5;
+}
+
+.tip p {
+  font-size: 30px;
+  margin: 0;
+  font-family: "Gotham Medium", sans-serif;
+}
+
+.tipuri {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.interior {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interior img {
+  width: 100%;
+}
+
+.interior1 h2 {
+  color: aliceblue;
+  font-size: 35px;
+  font-family: "Gotham Medium";
+}
+
+.interior h2 {
+  color: aliceblue;
+  font-size: 35px;
+  font-family: "Gotham Medium";
+}
+
+.r-video {
+  margin-top: 30px;
+}
+
+.r-table {
+  margin-bottom: 40px;
+  width: 70%;
+}
+
+.r-table td {
+  color: aliceblue;
+  font-size: 18px;
+  font-family: "Gotham Medium";
+  width: 50%;
+}
+
+.r-table td img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cont1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.048);
+  border-radius: 8px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+.cont12 p {
+  color: white;
+  font-size: 20px;
+  font-family: "Gotham Medium";
+}
+
+.cont12 img {
+  width: 500px;
+}
+
+.style {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  width: 100%;
+  color: white;
+  font-family: "Gotham Medium";
+}
+
+.style1 {
+  align-items: center;
+
+  flex: 1 1 450px;
+}
+
+.style1 h2 {
+  font-size: 35px;
+}
+
+.style1 p {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.style1 img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.future {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.f12 {
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+.f12 p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "Gotham Medium";
+}
+.f1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.f1 h2 {
+  color: aliceblue;
+  font-size: 35px;
+  font-family: "Gotham Medium";
+  margin-right: 30px;
+  padding-right: 30px;
+  border-right: 1px solid white;
+}
+
+.f1 p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "Gotham Medium";
+}
+
+.f2 {
+  width: 100%;
+}
+
+.f2 img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.sectiune {
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.model-imagini {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 30px 0px;
+}
+
+.model-imagini img {
+  width: 49%;
+  border-radius: 8px;
+}
+
+.despre-imagini {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+iframe {
+  width: 1000px;
+  height: 500;
+}
+
+.despre-imagini img {
+  width: 49%;
+  border-radius: 8px;
+}
+
+.r-specificatii {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+
+.r-specificatii ul {
+  padding: 0;
+}
+.r-specificatii li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+
+.title3 {
+  color: aliceblue;
+  font-family: "Gotham Medium";
+  font-size: 17px;
+}
+
+.title2 {
+  color: aliceblue;
+  font-family: "Gotham Medium";
+}
+
+.value {
+  color: aliceblue;
+  font-family: "Gotham Medium";
+}
+
+.rr {
+  background-image: url(imagini/roadster/background-roaster.jpg);
+  display: flex;
+  background-position: bottom;
+  background-size: cover;
+  height: 100%;
+  min-height: 90vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.rrr {
+  display: flex;
+  width: 65%;
+  margin-top: 416px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.rrr h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  margin-left: 50px;
+  padding-right: 50px;
+  font-family: "Gotham Medium", sans-serif;
+  color: aliceblue;
+  text-align: left;
+  border-right: 1px solid white;
+}
+
+.rrr p {
+  font-size: 18px;
+  margin-left: 50px;
+  font-family: "Gotham Medium", sans-serif;
+  color: aliceblue;
+  text-align: center;
+}
+
+.c-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  width: 70%;
+}
+
+.c-content img,
+.c-content video {
+  width: 100%;
+}
+
+.c1-content {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.c1-content h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  margin-left: 0px;
+  padding-right: 50px;
+  font-family: "Gotham Medium", sans-serif;
+  color: #bababa;
+  text-align: left;
+  border-right: 1px solid white;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.301);
+}
+
+.c1-content p {
+  font-size: 15px;
+  margin-left: 50px;
+  margin-top: 0;
+  font-family: "Gotham Medium", sans-serif;
+  color: #bababa;
+  text-align: left;
+}
